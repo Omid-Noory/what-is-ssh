@@ -1,0 +1,12 @@
+hostname R1
+
+interface GigabitEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+
+enable secret Cisco123
+
+line vty 0 4
+ password Cisco123
+ login
+ transport input telnet
